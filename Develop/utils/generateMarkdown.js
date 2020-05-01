@@ -1,68 +1,70 @@
-function generateMarkdown(data) {
-    return `
-    # ${data.title}
+function whichBadge(data) {
 
-    [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/johnfyoung/google)
+}
 
+function generateMarkdown(data) {return `
+# ${data.title}
 
-    ## Description
-
-    ${data.description}
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/${data.githubUsername}/${data.title})
 
 
-    ## Table of Contents 
+## Description
 
-    * [Installation](#installation)
-
-    * [Usage](#usage)
-
-    * [License](#license)
-
-    * [Contributing](#contributing)
-
-    * [Tests](#tests)
-
-    * [Questions](#questions)
+${data.description}
 
 
-    ## Installation
+## Table of Contents 
 
-    To install necessary dependencies, run the following command:
+* [Installation](#installation)
 
-    \`\`\`
-    ${data.depCommand}
-    \`\`\`
+* [Usage](#usage)
+
+* [License](#license)
+
+* [Contributing](#contributing)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
 
 
-    ## Usage
+## Installation
 
-    After clone make a copy of .env.sample, and fill in your environement variables.
+To install necessary dependencies, run the following command:
+
+\`\`\`
+${data.depCommand}
+\`\`\`
 
 
-    ## License
+## Usage
 
-    This project is licensed under the ${data.license} license.
+After clone make a copy of .env.sample, and fill in your environement variables.
+
+
+## License
+
+This project is licensed under the ${data.license} license.
     
 
-    ## Contributing
+## Contributing
 
-    Hit me up on slack - I have lots for you to do.
-
-
-    ## Tests
-
-    To run tests, run the following command:
-
-    \`\`\`
-    npm test
-    \`\`\`
+Hit me up on slack - I have lots for you to do.
 
 
-    ## Questions
+## Tests
 
-    If you have any questions about the repo, open an issue or contact [johnfyoung](undefined) directly at john@codeandcreative.com.
-  `;
-  }
+To run tests, run the following command:
+
+\`\`\`
+npm test
+\`\`\`
+
+
+## Questions
+
+If you have any questions about the repo, open an issue or contact [johnfyoung](undefined) directly at john@codeandcreative.com.
+`;}
   
 module.exports = { generateMarkdown: generateMarkdown };
   

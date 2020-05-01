@@ -51,7 +51,6 @@ function init() {
             console.log("Github not found");
         });
         const generatedMarkdown = generateMarkdown.generateMarkdown(answers);
-        console.log(generatedMarkdown);
         writeToFile("test.md", generatedMarkdown);
     });
 }

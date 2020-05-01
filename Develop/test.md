@@ -1,63 +1,62 @@
 
-    # title
+# ReadMe_Generator
 
-    [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/johnfyoung/google)
-
-
-    ## Description
-
-    description
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/eric-purrington/ReadMe_Generator)
 
 
-    ## Table of Contents 
+## Description
 
-    * [Installation](#installation)
-
-    * [Usage](#usage)
-
-    * [License](#license)
-
-    * [Contributing](#contributing)
-
-    * [Tests](#tests)
-
-    * [Questions](#questions)
+a command line application that generates readmes
 
 
-    ## Installation
+## Table of Contents 
 
-    To install necessary dependencies, run the following command:
+* [Installation](#installation)
 
-    ```
-    npm i
-    ```
+* [Usage](#usage)
+
+* [License](#license)
+
+* [Contributing](#contributing)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
 
 
-    ## Usage
+## Installation
 
-    After clone make a copy of .env.sample, and fill in your environement variables.
+To install necessary dependencies, run the following command:
+
+```
+npm i
+```
 
 
-    ## License
+## Usage
 
-    This project is licensed under the MIT license.
+After clone make a copy of .env.sample, and fill in your environement variables.
+
+
+## License
+
+This project is licensed under the MIT license.
     
 
-    ## Contributing
+## Contributing
 
-    Hit me up on slack - I have lots for you to do.
-
-
-    ## Tests
-
-    To run tests, run the following command:
-
-    ```
-    npm test
-    ```
+Hit me up on slack - I have lots for you to do.
 
 
-    ## Questions
+## Tests
 
-    If you have any questions about the repo, open an issue or contact [johnfyoung](undefined) directly at john@codeandcreative.com.
-  
+To run tests, run the following command:
+
+```
+npm test
+```
+
+
+## Questions
+
+If you have any questions about the repo, open an issue or contact [johnfyoung](undefined) directly at john@codeandcreative.com.
