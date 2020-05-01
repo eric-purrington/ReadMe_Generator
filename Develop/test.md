@@ -1,13 +1,12 @@
-function generateMarkdown(data) {
-    return `
-    # ${data.title}
+
+    # title
 
     [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/johnfyoung/google)
 
 
     ## Description
 
-    ${data.description}
+    description
 
 
     ## Table of Contents 
@@ -29,9 +28,9 @@ function generateMarkdown(data) {
 
     To install necessary dependencies, run the following command:
 
-    \`\`\`
-    ${data.depCommand}
-    \`\`\`
+    ```
+    npm i
+    ```
 
 
     ## Usage
@@ -41,7 +40,7 @@ function generateMarkdown(data) {
 
     ## License
 
-    This project is licensed under the ${data.license} license.
+    This project is licensed under the MIT license.
     
 
     ## Contributing
@@ -53,16 +52,12 @@ function generateMarkdown(data) {
 
     To run tests, run the following command:
 
-    \`\`\`
+    ```
     npm test
-    \`\`\`
+    ```
 
 
     ## Questions
 
     If you have any questions about the repo, open an issue or contact [johnfyoung](undefined) directly at john@codeandcreative.com.
-  `;
-  }
-  
-module.exports = { generateMarkdown: generateMarkdown };
   
