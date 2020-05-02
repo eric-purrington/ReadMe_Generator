@@ -1,12 +1,12 @@
 
-# ReadMe_Generator
+# jklllllllllld
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/eric-purrington/ReadMe_Generator)
-
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/eric-purrington/jklllllllllld)
+![Github last commit](https://img.shields.io/github/last-commit/eric-purrington/jklllllllllld)
 
 ## Description
 
-a command line application that generates readmes
+jkldf;sa
 
 
 ## Table of Contents 
@@ -29,23 +29,23 @@ a command line application that generates readmes
 To install necessary dependencies, run the following command:
 
 ```
-npm i
+jkld
 ```
 
 
 ## Usage
 
-After clone make a copy of .env.sample, and fill in your environement variables.
+jkl;
 
 
 ## License
 
-This project is licensed under the MIT license.
+This project is licensed under the Apache License 2.0 license.
     
 
 ## Contributing
 
-Hit me up on slack - I have lots for you to do.
+jkl
 
 
 ## Tests
@@ -53,10 +53,18 @@ Hit me up on slack - I have lots for you to do.
 To run tests, run the following command:
 
 ```
-npm test
+jkl;
 ```
+## Tech from others
+
+jkl
+
+
+## Acknowledgments
+
+I would like to thank jk for helping through this project. 
 
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact [johnfyoung](undefined) directly at john@codeandcreative.com.
+If you have any questions about the repo, open an issue or contact me via Email: unavailable.

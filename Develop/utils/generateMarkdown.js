@@ -1,12 +1,8 @@
-function whichBadge(data) {
-
-}
-
 function generateMarkdown(data) {return `
 # ${data.title}
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/${data.githubUsername}/${data.title})
-
+![Github last commit](https://img.shields.io/github/last-commit/${data.githubUsername}/${data.title})
 
 ## Description
 
@@ -39,7 +35,7 @@ ${data.depCommand}
 
 ## Usage
 
-After clone make a copy of .env.sample, and fill in your environement variables.
+${data.usage}
 
 
 ## License
@@ -49,7 +45,7 @@ This project is licensed under the ${data.license} license.
 
 ## Contributing
 
-Hit me up on slack - I have lots for you to do.
+${data.contribution}
 
 
 ## Tests
@@ -57,13 +53,21 @@ Hit me up on slack - I have lots for you to do.
 To run tests, run the following command:
 
 \`\`\`
-npm test
+${data.testing}
 \`\`\`
+## Tech from others
+
+${data.othersTech}
+
+
+## Acknowledgments
+
+I would like to thank ${data.acknowledgments} for helping through this project. 
 
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact [johnfyoung](undefined) directly at john@codeandcreative.com.
+If you have any questions about the repo, open an issue ${data.githubEmail}. 
 `;}
   
 module.exports = { generateMarkdown: generateMarkdown };
