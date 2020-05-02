@@ -50,7 +50,7 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err);
         }
-        console.log("Success!");
+        console.log("Success! Your generated ReadMe is called GeneratedReadMe.md!");
     });
 }
 
@@ -95,7 +95,7 @@ function consolidateData(input, data) {
     // Consolidates data from GitHub and users inputs
     let answers = { ...input, ...data };
     const generatedMarkdown = generateMarkdown.generateMarkdown(answers);
-    writeToFile("WeatherDashReadMe.md", generatedMarkdown);
+    writeToFile("GeneratedReadMe.md", generatedMarkdown);
 }
 
 init();

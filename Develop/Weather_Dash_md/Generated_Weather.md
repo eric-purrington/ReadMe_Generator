@@ -8,7 +8,7 @@
 
 A weather application featuring daily and 5-day forecast for your favorite cities.
 
-![Media](.\Weather-Dash.png)
+![Media](Weather-Dash.png)
 
 ## Table of Contents 
 
@@ -58,7 +58,9 @@ npm test
 ```
 ## Tech from others
 
-https://getbootstrap.com/
+https://getbootstrap.com/                       
+https://fontawesome.com/                        
+https://openweathermap.org/
 
 
 ## Questions
