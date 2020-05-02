@@ -8,6 +8,7 @@ function generateMarkdown(data) {return `
 
 ${data.description}
 
+![Media](${data.mediaFile})
 
 ## Table of Contents 
 
@@ -60,14 +61,9 @@ ${data.testing}
 ${data.othersTech}
 
 
-## Acknowledgments
-
-I would like to thank ${data.acknowledgments} for helping through this project. 
-
-
 ## Questions
 
-If you have any questions about the repo, open an issue ${data.githubEmail}. 
+If you have any questions about the repo, open an issue ${data.githubEmail}
 `;}
   
 module.exports = { generateMarkdown: generateMarkdown };

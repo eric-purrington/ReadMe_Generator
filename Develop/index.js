@@ -1,30 +1,10 @@
+// require files
 var inquirer = require("inquirer");
 var fs = require("fs");
 var axios = require("axios");
 var generateMarkdown = require("./utils/generateMarkdown");
 
-// inquirer.prompt(
-//     {
-//         type: "input",
-//         name: "githubUsername",
-//         message: "What is your Github username?"
-//     }).then(function (input) {
-//         let answers = { ...input };
-//         const queryURL = `https://api.github.com/users/${answers.githubUsername}`;
-//         axios.get(queryURL).then(function (res) {
-
-//             answers.githubURL = res.data.html_url;
-//             if (res.data.email !== null) {
-//                 answers.githubEmail = res.data.email;
-//             } else {
-//                 answers.githubEmail = "direct message";
-//             }
-//         }).catch(err => {
-//             console.log("Github not found.");
-//             init();
-//         });
-//         questioningCont(answers);
-//     });
+// questions asked after the GitHub has been found
 var questionsCont = [
 {
     type: "input",
@@ -37,15 +17,15 @@ var questionsCont = [
 }, {
     type: "input",
     name: "mediaFile",
-    message: "Please give a relative path to media file you would like to include from your readme file, if any."
+    message: "Include a media (img or gif) file by specifying relative path"
 }, {
     type: "input",
     name: "depCommand",
-    message: "To run your application, what command should a user use to install necessary dependencies?"
+    message: "What command should a user use to install necessary dependencies?"
 }, {
     type: "input",
     name: "usage",
-    message: "What should be done to use your application?"
+    message: "What notes on usage can you give your users?"
 }, {
     type: "list",
     name: "license",
@@ -62,11 +42,7 @@ var questionsCont = [
 }, {
     type: "input",
     name: "othersTech",
-    message: "List any links you would like to include "
-}, {
-    type: "input",
-    name: "acknowledgments",
-    message: "List any acknowledgments"
+    message: "List any links to other tech you would like to include"
 }];
 
 function writeToFile(fileName, data) {
@@ -90,14 +66,15 @@ function init() {
             axios.get(queryURL).then(res => {
 
                 answers.githubURL = res.data.html_url;
-                console.log(res.data);
+
+                // In case GitHub email is null
                 if (res.data.email !== null) {
                     answers.githubEmail = `or contact me via Email: ${res.data.email}`;
                 } else {
                     answers.githubEmail = "";
                 }
                 
-                // User gives nothing
+                // User gives blank username
                 if (answers.githubUsername === "") {
                     console.log("Github not found. Please enter valid username.");
                     init();
@@ -115,9 +92,10 @@ function init() {
 }
 
 function consolidateData(input, data) {
+    // Consolidates data from GitHub and users inputs
     let answers = { ...input, ...data };
     const generatedMarkdown = generateMarkdown.generateMarkdown(answers);
-    writeToFile("test.md", generatedMarkdown);
+    writeToFile("WeatherDashReadMe.md", generatedMarkdown);
 }
 
 init();
